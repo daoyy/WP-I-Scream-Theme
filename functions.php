@@ -12,10 +12,10 @@ function enqueue_scripts() {
 
 
   // Add Material Design CSS.
-  wp_enqueue_style( 'mdl-sheet', get_template_directory_uri() . '/css/material.min.css', array(), '1.0.2' );
+  wp_enqueue_style( 'mdl-sheet', get_template_directory_uri() . '/css/material.min.css', array(), '1.3.0' );
 
   // Add Material Design javascript.
-  wp_enqueue_script( 'mdl-js', get_template_directory_uri() . '/js/material.min.js', array(), '1.0.2', true );
+  wp_enqueue_script( 'mdl-js', get_template_directory_uri() . '/js/material.min.js', array(), '1.3.0', true );
 
   // Load main stylesheet.
   wp_enqueue_style( 'blog-sheet', get_stylesheet_uri(), array(), '0.5' );
