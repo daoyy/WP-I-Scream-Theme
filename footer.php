@@ -4,7 +4,7 @@
             <?php if ( !is_404() ) { get_search_form(); } ?>
           </div>
           <div class="mdl-mini-footer--right-section">
-            <a href="https://twitter.com/simodorg">
+            <a href="https://twitter.com/daoyy">
               <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
                 <span class="visuallyhidden">Twitter</span>
               </button>
