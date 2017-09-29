@@ -3,10 +3,13 @@
 // Enqueue scripts and styles.
 function enqueue_scripts() {
   // Add Material Design icon fonts.
-  wp_enqueue_style( 'mdl-icon-fonts', 'https://fonts.googleapis.com/icon?family=Material+Icons', array(), null );
+  // wp_enqueue_style( 'mdl-icon-fonts', 'https://fonts.googleapis.com/icon?family=Material+Icons', array(), null );
+  wp_enqueue_style( 'mdl-icon-fonts', 'https://fonts.lug.ustc.edu.cn/icon?family=Material+Icons', array(), null );
 
   // Add Roboto fonts.
-  wp_enqueue_style( 'roboto-fonts', 'https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium', array(), null );
+  // wp_enqueue_style( 'roboto-fonts', 'https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium', array(), null );
+  wp_enqueue_style( 'roboto-fonts', 'https://fonts.lug.ustc.edu.cn/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium', array(), null );
+
 
   // Add Material Design CSS.
   wp_enqueue_style( 'mdl-sheet', get_template_directory_uri() . '/css/material.min.css', array(), '1.0.2' );
