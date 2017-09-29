@@ -18,7 +18,7 @@ function enqueue_scripts() {
   wp_enqueue_script( 'mdl-js', get_template_directory_uri() . '/js/material.min.js', array(), '1.3.0', true );
 
   //自定义样式
-  wp_enqueue_style( 'mdl-sheet', get_template_directory_uri() . '/css/editor-style.css', array(), '0.0.1' );
+  wp_enqueue_style( 'editor-style', get_template_directory_uri() . '/css/editor-style.css', array(), '0.0.1' );
 
   // Load main stylesheet.
   wp_enqueue_style( 'blog-sheet', get_stylesheet_uri(), array(), '0.5' );
