@@ -190,7 +190,7 @@ function my_search_form( $form ) {
 add_filter( 'get_search_form', 'my_search_form' );
 //gravatar CDN
 function get_avatar_CDN( $avatar ) {
-$avatar = preg_replace( "/https:\/\/(*).gravatar.com/","https://gravatar-dyy-io.b0.upaiyun.com/",$avatar );
+$avatar = preg_replace( "/https:\/\/(*).gravatar.com/","https://gravatar-dyy-io.b0.upaiyun.com",$avatar );
 return $avatar;
 }
 add_filter( 'get_avatar', 'get_avatar_CDN' );
