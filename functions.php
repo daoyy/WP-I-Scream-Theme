@@ -189,8 +189,7 @@ function my_search_form( $form ) {
 
 add_filter( 'get_search_form', 'my_search_form' );
 //gravatar
-// function get_avatar_CDN( $avatar ) {
-// $avatar = preg_replace( "/https:\/\/secure.gravatar.com/","https://gravatar-dyy-io.b0.upaiyun.com",$avatar );
-// return $avatar;
-// }
-// add_filter( 'get_avatar', 'mytheme_get_avatar' );
+function replace_gravatar($avatar) {
+$avatar = str_replace(array("//gravatar.com/", "//secure.gravatar.com/", "//www.gravatar.com/", "//0.gravatar.com/", "//1.gravatar.com/", "//2.gravatar.com/", "//cn.gravatar.com/"), "//gravatar-dyy-io.b0.upaiyun.com/", $avatar);
+return $avatar;}
+add_filter( 'get_avatar', 'replace_gravatar' );
